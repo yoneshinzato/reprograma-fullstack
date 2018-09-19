@@ -1,0 +1,107 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url('../img/milky-way.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FONTS */
+h1 {
+    color: #8e44ad;
+    font-size: 35px;
+    margin:0.6em auto;
+    width:60%;
+}
+
+h1::selection, h2::selection {
+    color: #fff; 
+    background: #8e44ad;
+}
+
+h2 {
+    color: #bfbfbf;   
+    font-size: 25px;
+}
+
+/* SEÇÃO SOBRE */
+.secao-sobre {
+    background-color: white;
+    width:70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.sobre-conteudo__img {
+    margin-top: 80px;
+    border-radius:50%;
+    max-width:25%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}  
+    
+.sobre-conteudo {
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+}
+
+.sobre-conteudo__redes-sociais {
+    margin: 100px auto 0 auto;
+    padding-bottom: 90px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+
+
+.sobre-conteudo__redes-sociais img {
+    margin-right:20px;
+    width:80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition:all 0.5s;
+}
+
+.sobre-conteudo__redes-sociais img:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter:none;
+}
+
+.sobre-conteudo__redes-sociais img:active{
+    -webkit-filter: saturate(20); /* Safari 6.0 - 9.0 */
+    filter:saturate(20);
+}
+
+.sem-margem img{
+    margin-right:0;
+}
+
+@media only screen and (max-width:800px){
+    .sobre-conteudo__redes-sociais img {
+        width:50px;
+    }
+
+    .secao-sobre {
+        background-color: #f1dfdb;
+        width:80%;
+    }
+
+    .secao-sobre h2{
+        color:#8e44ad;
+    }
+}
+
+
