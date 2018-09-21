@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{Reprograma} - Login</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="login-page">
+		<div class="form">
+			<form class="login-form" method="post">
+				<input type="text" placeholder="username" id="username" />
+				<input type="password" placeholder="password" id="password" />
+				<p id="msg"></p>
+				<button id="btn">login</button>
+			</form>
+		</div>
+	</div>
+
+
+	<script>
+		var btn = document.querySelector("#btn");
+		btn.addEventListener('click', function(ev){
+			ev.preventDefault();
+			var username = document.querySelector('#username').value;
+			var password = document.querySelector('#password').value;
+			var mensagem = document.querySelector("#msg");
+
+			if(username == "admin" && password == "admin"){
+				mensagem.textContent = "Sucesso";
+				mensagem.style.color = "green";
+
+			} else{
+				mensagem.textContent = "Errou!!!!";
+				mensagem.style.color = "red";
+			}
+
+		})
+	</script>
+</body>
+
+</html>
