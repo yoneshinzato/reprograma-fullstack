@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 6</title>
+    <script src="js/jj.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form action="#" class="form">
+
+        <div>
+            <label for="texto">Usuário</label>
+            <input type="text" name="usuario" class="half-col" id="usuario">
+        </div>
+
+        <div>
+            <label for="texto">Senha</label>
+            <input type="password" name="password" id="password" class="half-col">
+        </div>
+        <div>
+            <input type="button" value="Checar senha" onclick="checarUsuario()" id="checar-senha" name="button">
+        </div>
+
+        <div>
+            <label for="texto">Escolha uma ou múltiplas opções</label>
+            <div class="half-col">
+                <input type="checkbox" name="mulher" value="Mulher" id='mulher'> Mulher <br>
+                <input type="checkbox" name="poderosa" value="Poderosa" id="poderosa"> Poderosa <br>
+                <input type="checkbox" name="linda" value="Linda" id="linda"> Linda <br>
+                <input type="checkbox" name="maravilhosa" value="Maravilhosa" id="maravilhosa"> Maravilhosa <br>
+            </div>
+        </div>
+        <div>
+            <input type="button" value="Checar checkbox" onclick="checarCheckbox()" id="checkbox" name="checkbox">
+        </div>
+
+        <div>
+            <label for="texto">Escolha uma opção</label>
+            <div class="half-col">
+                <input type="radio" name="mulher" value="forca"> Super força <br>
+                <input type="radio" name="mulher" value="invisivel"> Ser invisível <br>
+                <input type="radio" name="mulher" value="mentes""> Ler mentes <br>
+                <input type="radio" name="mulher" value="velocidade"> Super velocidade <br>
+            </div>
+        </div>
+        <div>
+            <input type="button" value="Checar Radio" onclick="checarRadio()" id="checkradio" name="checkradio">
+        </div>
+
+        <div>
+            <label for="texto">Selecione um tópico</label>
+            <select name="dropdown">
+                <option value="contato" name="contato">Deixar meu site mais bonito</option>
+                <option value="contato" name="contato">Desenvolver um logotipo massa!</option>
+                <option value="contato" name="contato">Fazer a gestão das redes sociais</option>
+                <option value="contato" name="contato">Lorem ipsum dolor amet</option>
+            </select>
+        </div>
+        <div>
+        <input type="button" value="Checar seleção" id="checkSelecao">
+        </div>
+
+        <div>
+            <label for="texto">Escolha um valor</label>
+            <input type="text" name="valor">
+        </div>
+        
+        <div>
+            <label for="texto">Comentário</label>
+            <input type="text" name="valor">
+        </div>
+
+        <div>
+            <div class="half-col"></div>
+            <button class="btn btn_grey">Limpar</button>
+            <input class="btn btn_purple" type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>
